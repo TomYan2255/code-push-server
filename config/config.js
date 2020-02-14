@@ -7,7 +7,7 @@ config.development = {
     username: process.env.RDS_USERNAME || "root",
     password: process.env.RDS_PASSWORD || null,
     database: process.env.DATA_BASE || "codepush",
-    host: process.env.RDS_HOST || "127.0.0.1",
+    host: process.env.RDS_HOST || "10.0.0.73",
     port: process.env.RDS_PORT || 3306,
     dialect: "mysql",
     logging: false,
@@ -59,7 +59,7 @@ config.development = {
     // Binary files storage dir, Do not use tmpdir and it's public download dir.
     storageDir: process.env.STORAGE_DIR || "/Users/tablee/workspaces/storage",
     // Binary files download host address which Code Push Server listen to. the files storage in storageDir.
-    downloadUrl: process.env.LOCAL_DOWNLOAD_URL || "http://127.0.0.1:3000/download",
+    downloadUrl: process.env.LOCAL_DOWNLOAD_URL || "http://10.0.0.73:3000/download",
     // public static download spacename.
     public: '/download'
   },

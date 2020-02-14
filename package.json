@@ -16,9 +16,9 @@
     "push"
   ],
   "author": {
-    "name": "Tab Lee",
-    "email": "lisong2010@gmail.com",
-    "url": "https://github.com/lisong/"
+    "name": "Tom",
+    "email": "tom.yan@coolbitx.com",
+    "url": "https://github.com/TomYan2255/"
   },
   "bin": {
     "code-push-server": "./bin/www",
