@@ -21,11 +21,21 @@ npm install code-push-server -g
 
 Install mysql:https://ken.io/note/macos-mysql8-install-config-tutorial
 
-服務權限打開(這樣不用每次都打密碼) sudo chmod 777 /usr/local/mysql/support-files/mysql.server 
-環境變數設定 open ~/.bash_profile  add PATH=$PATH:/usr/local/mysql/bin
-source ~/.bash_profile root設定權限 mysql -uroot -p
-ALTER USER `root`@`localhost` IDENTIFIED WITH mysql_native_password BY `password`; (直接複製貼上改密碼) flush privileges; 初始化資料庫 code-push-server yanyuyuan$ code-push-server-db init --dbhost localhost --dbuser root --dbpassword 12345678  設定 code-push-server config.js open /usr/local/lib/node_modules/code-push-server/config/config.js
-要改的地方 db info
+服務權限打開(這樣不用每次都打密碼)
+sudo chmod 777 /usr/local/mysql/support-files/mysql.server 
+環境變數設定
+open ~/.bash_profile 
+PATH=$PATH:/usr/local/mysql/bin
+source ~/.bash_profile
+
+root設定權限:
+mysql -uroot -p
+ALTER USER `root`@`localhost` IDENTIFIED WITH mysql_native_password BY `password`; (直接複製貼上改密碼) flush privileges; 初始化資料庫 
+code-push-server yanyuyuan$ code-push-server-db init --dbhost localhost --dbuser root --dbpassword 12345678  設定 code-push-server config.js
+
+ open /usr/local/lib/node_modules/code-push-server/config/config.js
+要改的地方
+db :info
 Local : storageDir,downloadUrl
 
 Start Server
