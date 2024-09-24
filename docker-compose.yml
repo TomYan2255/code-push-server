@@ -6,7 +6,7 @@ services:
       - data-storage:/data/storage
       - data-tmp:/data/tmp
     environment:
-      DOWNLOAD_URL: 'http://127.0.0.1:3000/download'
+      DOWNLOAD_URL: 'http://192.168.14.34:3000/download'
       TOKEN_SECRET: 'Jh5kmHhIaKMrlv9DUGcw0g33NhtZJxhMoBY8Ouh4nHyIntGDZfuqi2r8Fn5t70t'
       RDS_HOST: 'mysql'
       RDS_USERNAME: 'codepush'
