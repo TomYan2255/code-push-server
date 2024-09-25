@@ -161,7 +161,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 
 INSERT INTO `users` (`id`, `username`, `password`, `email`, `identical`, `ack_code`, `updated_at`, `created_at`)
 VALUES
-	(1,'admin','$2a$12$mvUY9kTqW4kSoGuZFDW0sOSgKmNY8SPHVyVrSckBTLtXKf6vKX3W.','lisong2010@gmail.com','4ksvOXqog','oZmGE','2016-11-14 10:46:55','2016-02-29 21:24:49');
+	(1,'admin','$2a$12$mvUY9kTqW4kSoGuZFDW0sOSgKmNY8SPHVyVrSckBTLtXKf6vKX3W.','ty@digitnet.co','4ksvOXqog','oZmGE','2016-11-14 10:46:55','2016-02-29 21:24:49');
 
 
 CREATE TABLE IF NOT EXISTS `versions` (
